@@ -1,9 +1,5 @@
 export type Film = {
-    id: number;
+    id: number | string;
     title: string;
-    Key[]
-    director: string;
-    releaseYear: number;
-    genre: string;
-    rating: number;
+    [key: string]: unknown;
 };
