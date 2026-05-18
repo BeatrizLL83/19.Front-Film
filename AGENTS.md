@@ -2,10 +2,10 @@
 
 ## Project Structure & Module Organization
 
-- `src/` contains the application code.
+- `src/` contains the application code. 
 - Top-level feature folders such as `home/`, `about/`, and `films/` expose page modules like `home-page.ts`.
-- Shared code lives under `src/core/`:
-  - `components/` for reusable UI,
+- Shared code lives under `src/core/`: 
+  - `components/` for reusable UI, 
   - `router/` for navigation,
   - `data/` for static data,
   - `entities/` for domain models,
@@ -14,9 +14,9 @@
 
 ## Build, Test, and Development Commands
 
-- Use `npm run dev` to start the Vite dev server.
-- Use `npm run build` to type-check with `tsc` and produce the production bundle.
-- Use `npm run preview` to serve the built app locally.
+- Use `npm run dev` to start the Vite dev server. 
+- Use `npm run build` to type-check with `tsc` and produce the production bundle. 
+- Use `npm run preview` to serve the built app locally. 
 - Use `npm run lint` to check for linting issues with ESLint.
 - There is no `test` script yet.
 
@@ -28,7 +28,7 @@
   - 4-space indentation,
   - single quotes,
   - semicolons
-  - explicit imports with `.ts` omitted.
+  - explicit imports with `.ts` omitted. 
 - Keep page files named `*-page.ts`, and use the current component split:
   - `*.ts` for custom elements and paired `.css` files for component styles.
 - Use native Custom Elements without Shadow DOM; render component HTML with template strings and `innerHTML`.
@@ -44,7 +44,6 @@
 ## Implementation Notes
 
 - The router is intentionally basic: it handles the main pages, uses the History API, and does not support nested routes or advanced `query`/`hash` handling.
-- The menu implementation is intentionally educational; a production-ready version should manage listeners through `connectedCallback`/`disconnectedCallback`.
 - Global styling is centralized in `base.css` and `index.css`; component-specific styles should be imported from the component file.
 
 ## Commit & Pull Request Guidelines
@@ -56,5 +55,5 @@
 
 ## Configuration Tips
 
-- Keep secrets in `.env` and never hardcode credentials in `src/`.
+- Keep secrets in `.env` and never hardcode credentials in `src/`. 
 - When adding new assets, place browser-facing files in `public/` and import code-owned assets from `src/` so Vite can process them correctly.
